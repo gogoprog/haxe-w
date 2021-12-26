@@ -1,0 +1,11 @@
+{
+	"name": "haxe-w",
+	"classPath": "src",
+	"url" : "https://github.com/gogoprog/haxe-w/",
+	"license": "MIT",
+	"tags": ["js", "w", "webgl2", "externs", "framework", "3d", "rendering"],
+	"description": "Externs for W the micro WebGL2 framework",
+	"version": "0.1.0",
+	"releasenote": "",
+	"contributors": ["gogoprog"]
+}
