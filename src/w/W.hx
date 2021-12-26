@@ -51,19 +51,26 @@ typedef MoveSettings = {
     @:optional var rz:Float;
 };
 
+typedef ModelData = {
+    var vertices:Array<Float>;
+    @:optional var indices:Array<Float>;
+    var uv:Array<Float>;
+};
 
+extern class W_ implements Dynamic {
+    public function reset(c:js.html.CanvasElement):Void;
+    public function camera(settings:CameraSettings, ?delay:Float):Void;
+    public function light(settings:LightSettings, ?delay:Float):Void;
 
-@:native("W")
-extern class W {
-    static public function reset(c:js.html.CanvasElement):Void;
-    static public function camera(settings:CameraSettings, ?delay:Float):Void;
-    static public function light(settings:LightSettings, ?delay:Float):Void;
+    public function cube(settings:ObjectSettings):Void;
+    public function plane(settings:ObjectSettings):Void;
+    public function billboard(settings:ObjectSettings):Void;
+    public function pyramid(settings:ObjectSettings):Void;
+    public function sphere(settings:ObjectSettings):Void;
 
-    static public function cube(settings:ObjectSettings):Void;
-    static public function plane(settings:ObjectSettings):Void;
-    static public function billboard(settings:ObjectSettings):Void;
-    static public function pyramid(settings:ObjectSettings):Void;
-    static public function sphere(settings:ObjectSettings):Void;
+    public function add(name:String, data:ModelData):Void;
 
-    static public function move(settings:MoveSettings, ?delay:Float):Void;
+    public function move(settings:MoveSettings, ?delay:Float):Void;
 }
+
+var W:W_ = js.Syntax.code("W");
