@@ -18,3 +18,7 @@ function main() {
     W.pyramid({x:-5, size:4, b:"909"});
 }
 ```
+
+produces
+
+![Image](https://gogoprog.github.io/haxe-w/example.png)
