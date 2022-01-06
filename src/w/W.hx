@@ -59,6 +59,7 @@ typedef ModelData = {
 
 extern class W_ implements Dynamic {
     public function reset(c:js.html.CanvasElement):Void;
+    public function clearColor(color:String):Void;
     public function camera(settings:CameraSettings, ?delay:Float):Void;
     public function light(settings:LightSettings, ?delay:Float):Void;
 
@@ -71,6 +72,7 @@ extern class W_ implements Dynamic {
     public function add(name:String, data:ModelData):Void;
 
     public function move(settings:MoveSettings, ?delay:Float):Void;
+    public function delete(name:String, ?delay:Float):Void;
 }
 
 var W:W_ = js.Syntax.code("W");

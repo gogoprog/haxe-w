@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"tags": ["js", "w", "webgl2", "externs", "framework", "3d", "rendering", "extern"],
 	"description": "Externs for W the micro WebGL2 framework",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"releasenote": "",
 	"contributors": ["gogoprog"]
 }
